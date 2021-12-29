@@ -1,0 +1,187 @@
+.home {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-family);
+  color: #1f2833;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.home-image img {
+  width: 600px;
+  height: 500px;
+}
+
+.home-description {
+  width: 100%;
+  line-height: 30px;
+}
+
+.home-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.home-text {
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 3rem;
+}
+
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 40px;
+}
+
+.location,
+.email {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.location-icon,
+.email-icon {
+  font-size: 28px;
+}
+
+.location p,
+.email p {
+  font-size: 20px;
+  margin-left: 1rem;
+}
+
+.email p {
+  color: rgb(16, 108, 230);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.social-media p {
+  padding: 1rem;
+}
+
+.linkedin {
+  color: rgb(16, 137, 212);
+}
+
+@media screen and (max-width: 1090px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-image {
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .location-icon,
+  .email-icon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .home {
+    margin-left: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    font-size: 20px;
+    line-height: 45px;
+  }
+
+  .home-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 3rem;
+  }
+
+  .location p,
+  .email p {
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+
+  .location-icon,
+  .email-icon {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home-name {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .home-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home-name {
+    font-size: 16px;
+    line-height: 38px;
+  }
+
+  .home-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 2rem;
+  }
+
+  .location p,
+  .email p {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+
+  .home-contact {
+    margin-top: 2rem;
+    font-size: 30px;
+  }
+
+  .social-media {
+    font-size: 30px;
+  }
+
+  .location-icon,
+  .email-icon {
+    font-size: 20px;
+  }
+}

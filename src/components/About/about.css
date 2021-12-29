@@ -1,0 +1,233 @@
+.about {
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+  color: #1f2833;
+  font-family: var(--font-family);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-heading {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 2rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.university {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 3rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.school-icon {
+  font-size: 200px;
+}
+
+.uni-icon {
+  font-size: 200px;
+}
+
+.sch-type {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.uni-type {
+  font-size: 30px;
+  line-height: 30px;
+
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+}
+
+.school-name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.uni-name {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+
+  margin-top: 3rem;
+}
+
+.school:hover,
+.university:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.study {
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 2rem;
+}
+
+.time {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.degree {
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .sch-type,
+  .uni-type {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .uni-name,
+  .school-name {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .degree {
+    text-align: center;
+  }
+
+  .about-info {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .school,
+  .university {
+    width: 100%;
+  }
+
+  .university {
+    margin-top: 3rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-info {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    padding: 2rem;
+  }
+
+  .about-info {
+    margin: 0;
+  }
+
+  .about-heading {
+    font-size: 20px;
+  }
+
+  .school-icon,
+  .uni-icon {
+    font-size: 150px;
+  }
+
+  .school,
+  .university {
+    padding: 1rem;
+  }
+
+  .sch-type,
+  .uni-type {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .school-name,
+  .uni-name {
+    font-size: 20px;
+  }
+
+  .study,
+  .degree {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .school-icon,
+  .uni-icon {
+    font-size: 120px;
+  }
+
+  .sch-type,
+  .uni-type {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .school-name,
+  .uni-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .study,
+  .degree {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,210 @@
+.skills {
+  background-color: white;
+  font-family: var(--font-family);
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.icons {
+  height: 120px;
+  width: 120px;
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.icons:hover {
+  transform: translateY(-10px);
+}
+.skills-heading {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proIcon-heading {
+  font-size: 30px;
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.icon-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+}
+
+.vs,
+.git,
+.netlify {
+  height: 120px;
+  width: 120px;
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.vs:hover,
+.git:hover,
+.netlify:hover {
+  transform: translateY(-10px);
+}
+
+.toolIcon-heading {
+  font-size: 30px;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.toolIcons-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .icon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .proIcon-heading,
+  .toolIcon-heading {
+    font-size: 28px;
+  }
+
+  .proIcon-heading {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .proIcon-heading {
+    padding-left: 2rem;
+  }
+
+  .icons {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 3rem;
+  }
+
+  .vs,
+  .git,
+  .netlify {
+    height: 100px;
+    width: 100px;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .icons {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 3rem;
+  }
+
+  .vs,
+  .git,
+  .netlify {
+    height: 90px;
+    width: 90px;
+    margin-left: 4rem;
+  }
+
+  .icon-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .toolIcons-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills {
+    margin-right: 3rem;
+  }
+
+  .icons {
+    height: 80px;
+    width: 80px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .vs,
+  .git,
+  .netlify {
+    height: 80px;
+    width: 80px;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+
+  .proIcon-heading,
+  .toolIcon-heading {
+    font-size: 20px;
+  }
+
+  .toolIcon-heading {
+    margin-bottom: 2rem;
+  }
+  .skills-heading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .proIcon-heading,
+  .toolIcon-heading {
+    font-size: 16px;
+  }
+
+  .skills-heading {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+
+  .icons {
+    height: 60px;
+    width: 60px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .vs,
+  .git,
+  .netlify {
+    height: 60px;
+    width: 60px;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+}
